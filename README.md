@@ -8,6 +8,13 @@
 
 - [Takashiidobe](./ch1/takashiidobe-answers.md)
 
+## Chapter 2
+
+- [Questions](./ch2/questions.md)
+
+### Answers
+
+
 ## Contributing
 
 If you'd like to join in on this book club session, you can fork this
