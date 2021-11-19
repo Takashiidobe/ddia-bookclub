@@ -8,7 +8,7 @@
 
 -- YOUR ANSWER HERE --
 
-## What makes a system scalable? What are the characteristics of a stable system?
+## What makes a system scalable? What are the characteristics of a scalable system?
 
 -- YOUR ANSWER HERE --
 
