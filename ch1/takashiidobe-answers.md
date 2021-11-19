@@ -12,9 +12,20 @@ time software tends to be compute-intensive.
 
 ## What is the definition of a reliable system? What are some of the ways that systems can become "unreliable"?
 
-## What makes a system scalable? What are the characteristics of a stable system?
+A reliable system works correctly in the face of adversity. A system
+should perform the way a user expects (the principle of least
+surprise), correct/guide the user when they make mistakes, and prevent
+invalid states.
 
--- YOUR ANSWER HERE --
+As well, a system that tolerates faults tends to be more reliable, since
+systems tend to be in a state where something is going wrong, namely
+hardware faults (bits can be flipped, data can be lost on a machine, a
+machine cannot be reached through the network). A system that can
+tolerate the loss of one machine is much more reliable than a system
+that goes down when a machine goes down.
+
+## What makes a system scalable? What are the characteristics of a scalable system?
+
 
 ## What is the difference between a horizontally scaling and vertically scaling system? What are some of the pros and cons for each?
 
