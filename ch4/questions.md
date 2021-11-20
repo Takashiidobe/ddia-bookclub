@@ -16,12 +16,14 @@
 
 -- YOUR ANSWER HERE --
 
-## Weakening and Strengthening Post Conditions
+## Weakening and Strengthening Conditions
 
 Let's say I have a function that takes an `x` and returns the serialized
 form of `x`, which we call `y`. I know that this call can fail, so this
-function returns a Maybe (for reference, printf can fail in C, so most
-I/O operations are fallible).
+function returns a Maybe.
+
+In Haskell, a Maybe type is defined as: `Maybe a = Just a | Nothing`.
+A Maybe type may either have that `a` or not.
 
 ```hs
 -- This means the serialize function takes an `x` and possibly returns a
