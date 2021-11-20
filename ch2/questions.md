@@ -12,10 +12,14 @@
 
 -- YOUR ANSWER HERE --
 
-## Assume your next project is to create a Social Network. What technology would you use, and why?
+## Assume your next project is to create a Social Network. How would you store the data, and why?
 
 -- YOUR ANSWER HERE --
 
-## Mapreduce is the first example of a distributed batch processing paradigm. What are some of the thoughts you have on it. How would you improve it? What does it do well? What are some things you dislike about it?
+## Mapreduce is the first example of a distributed batch processing paradigm. Give a short summary of it. How would you improve it? What does it do well? What are some things you dislike about it?
+
+-- YOUR ANSWER HERE --
+
+## It is said that NoSQL databases do not require a schema up front. Is this true? Conversely, is it possible to change the schemas of SQL databases after creation? If so, what are the caveats?
 
 -- YOUR ANSWER HERE --
