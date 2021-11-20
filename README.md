@@ -7,6 +7,19 @@
 ### Answers
 
 - [Takashiidobe](./ch1/takashiidobe-answers.md)
+- [humbug](./ch1/humbug-answers.md)
+
+## Chapter 2
+
+- [Questions](./ch2/questions.md)
+
+### Answers
+
+## Chapter 3
+
+- [Questions](./ch3/questions.md)
+
+### Answers
 
 ## Contributing
 
