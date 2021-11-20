@@ -26,8 +26,7 @@ In Haskell, a Maybe type is defined as: `Maybe a = Just a | Nothing`.
 A Maybe type may either have that `a` or not.
 
 ```hs
--- This means the serialize function takes an `x` and possibly returns a
-`y`, otherwise it returns Nothing.
+-- This means the serialize function takes an `x` and possibly returns a `y`, otherwise it returns Nothing.
 Serialize :: x -> Maybe y
 ```
 
@@ -35,9 +34,7 @@ Let's say I have discovered that this call will never fail. I strengthen
 my precondition to make sure that it returns a y, always.
 
 ```hs
--- This means the serialize function takes an `x` and always returns a
-`y`.
-`y`, otherwise it returns Nothing.
+-- This means the serialize function takes an `x` and always returns a `y`. `y`, otherwise it returns Nothing.
 Serialize :: x -> y
 ```
 
@@ -47,8 +44,7 @@ could fail?
 What happens if I weaken a condition?
 
 ```hs
--- This means the serialize function takes an `x` and always returns a
-`y`.
+-- This means the serialize function takes an `x` and always returns a `y`.
 Serialize :: x -> y
 ```
 
@@ -56,8 +52,7 @@ I thought the caller would need to provide an `x`, but I later on
 provided a default `y` which can be returned if `x` is not provided.
 
 ```hs
--- This means the serialize function can take an `x` and always returns a
-`y`.
+-- This means the serialize function can take an `x` and always returns a `y`.
 Serialize :: Maybe x -> y
 ```
 
