@@ -56,6 +56,8 @@ The government could've consulted with people knowledgable with building complex
 
 I am a simple student that has never worked on any team before :(.  But in my future team, I'm sure i'll be sure to keep the concepts in mine
 
-Add redundnacies so that no single point of failure will take down our service
+Add redundnacies so that no single point of failure will take down our service.
+
 Make sure our services are simplistic/operable/maintainable. To prevent bugs from appearing, and if they do appear, make it easy to fix.
+
 As well as building our services with an expectation that that people operating then are no smarter then the gorilla that learned sign language. 
