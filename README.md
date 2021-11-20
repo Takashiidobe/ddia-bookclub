@@ -7,6 +7,7 @@
 ### Answers
 
 - [Takashiidobe](./ch1/takashiidobe-answers.md)
+- [humbug](./ch1/humbug-answers.md)
 
 ## Chapter 2
 
