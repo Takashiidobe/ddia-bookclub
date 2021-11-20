@@ -15,6 +15,11 @@
 
 ### Answers
 
+## Chapter 3
+
+- [Questions](./ch3/questions.md)
+
+### Answers
 
 ## Contributing
 
