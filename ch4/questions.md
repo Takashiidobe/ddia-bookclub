@@ -34,7 +34,7 @@ Let's say I have discovered that this call will never fail. I strengthen
 my precondition to make sure that it returns a y, always.
 
 ```hs
--- This means the serialize function takes an `x` and always returns a `y`. `y`, otherwise it returns Nothing.
+-- This means the serialize function takes an `x` and always returns a `y`.
 Serialize :: x -> y
 ```
 
