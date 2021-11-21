@@ -34,6 +34,12 @@
 
 ### Answers
 
+## Chapter 6
+
+- [Questions](./ch6/questions.md)
+
+### Answers
+
 ## Contributing
 
 If you'd like to join in on this book club session, you can fork this
