@@ -24,3 +24,7 @@
 
 -- YOUR ANSWER HERE --
 
+## This chapter has a fairly light explanation of replication for now, which will be covered more in detail later on in the third part of the book. What are some of the questions you had while reading the chapter? If you have any, try to search around and see how they could be addressed. If a cursory look didn't uncover a satisfactory answer, feel free to ask about your question in the discord.
+
+-- YOUR ANSWER HERE --
+
