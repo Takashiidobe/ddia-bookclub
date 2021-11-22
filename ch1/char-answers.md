@@ -59,6 +59,11 @@ Even if we deploy only to a subset of customers, we need good enough observabili
 
 ## Reflect on your personal experience. What are some of the ways that your team keeps services healthy and responsive? How do you test services? How do you react quickly to an unhealthy service?
 
-We keep services healthy and responsive by having a good observability stack.  If something is degragated, or failing we have alarms that will fire for the incident to inform our oncall (who can contact others on the team) to investigate.
+1. Monitoring and Logging with Alarms.
+2. Runbooks for those Alarms
+3. Not deploying without testing
+
 We test by having a few staged deployments, with development, testing, and production enviroments.  We do not deploy changes to all pods at once, but instead gradually replace pods with the updated version and can rollback if needed.
-We react quickly to alarms by paging the oncall who will start investigating within some minutes of they will anger managers haha.
+If something is degragated, or failing we have alarms that will fire for the incident to inform our oncall (who can contact others on the team) to investigate via a page.
+The alarm will have a link to a runbook with steps to diagnose and possible reccomendations to remediate the issue.
+
