@@ -39,8 +39,9 @@ unmaintainable: Hard to keep service running, and difficult to extend features o
 
 ## Explain a project where you had to make it more reliable/scalable/maintainable. How did you do it, and what were some of the roadblocks in achieving the systems goals?
 
-I took a service from hackathon project to production.  This involved, converting it from a cronjob that ran each hour on a single box, to a containerized service that runs in a k8s cluster with a work queue to distribute the work horizontally.
-This made it easier to run, by just applying yaml to a k8s cluster, more reliable in that the managed k8s service will manage my replicas and keep enough pods running and more scalable in that we didn't need the one box to finish its work within the hour.
+I took a service from hackathon project to production.  This involved, rewriting it completely.
+From a reliability and scalability perspective, this including rewriting the flow of the service from a cronjob that ran each hour on a single box, to a containerized service that runs in a k8s cluster with a work queue to distribute the work horizontally and retry on failures.
+From a maintainability perspective I made it easier to run, by just applying yaml to a k8s cluster instead of sshing into a box and deploying the code and an object oriented design that allowed to large amounts of code reuse.
 
 ## Read three of the post-mortems in this [repo](https://github.com/danluu/post-mortems). What are some of the ways in which outages are caused? What could the teams have done to mitigate the blast radius or lowered the chance of such an outage happening? Explain the outage in your own words and give an explanation for what you learned from each summary.
 
