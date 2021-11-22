@@ -1,7 +1,7 @@
 # Chapter 1 Questions
 
 ## What does it mean for most applications to be data-intensive instead of compute-intensive?
-- Compute intensive applications rely on the power of horizontal scaling and the use of CPUs. Compute intensive applications will scale via adding more CPUs aka more compute power. A data intensive application relies on common modules used for handing data. With data driven applications we rely on specific common tech, where each building block has some specific use. Data driven applications ushered in the modern microservices architecture.
+- Compute intensive applications rely on the power of CPUs. Compute intensive applications will scale via adding more CPUs aka more compute power. A data intensive application relies on common modules used for handing data. With data driven applications we rely on specific common tech, where each building block has some specific use. Data driven applications ushered in the modern microservices architecture.
 
 ### Some of the common Modules Mentioned
 - Databases used for persistence of data
@@ -50,16 +50,28 @@
 
 ## What makes a system maintainable? What makes a system "unmaintainable"?
 
--- YOUR ANSWER HERE --
+- There are three Principles we can abide by to keep our system maintainable.
+1. Operability. Make it easy for operations teams to keep the system running smoothly.
+2. Simplicity. Make it easy for new engineers to understand the system. Remove extra complexity or abscrations. 
+3. Evolvablity. Make it easy to change the system without having to rewrite the entire system.
+
+- In contrast a unmaintainable system is one where its convoluded, not set up with proper documentation/error handling, overall just the contrast to the three earlier mentioned parameters.
 
 ## Explain a project where you had to make it more reliable/scalable/maintainable. How did you do it, and what were some of the roadblocks in achieving the systems goals?
 
--- YOUR ANSWER HERE --
+- at my current job I had to address some scalability concerns to a given calculation we have at work. Due to an NDA i will not get into the specifics of the problem but will provide some generalizations that will help you get some context. We have this compute intensive calculation where we calculate distance measures in different ways over an adj matrix. The issue came where we are building this graph based on historic time-series data. We want to be able to speed up this distance measure calculation. The problem arose that we were recomputing some of those timeranges and it was really slowing down our system. We ran into a large client with a massive dataset that our previous system could not handle. but the Team and I, (my team mainly I was involved but this was as I joined.) Found that storing incremental states for each date and using a dynamic programming stategy allowed us to incrmentally calculate this data and scale it to use a fraction of the memory, as well as a fraction of the time. Now instead of calculating the entire Graph from 1970-2021 we can incrmentally calculate those graphs and cache the graph state for future computations, so we can incrmentally approach the problem. I think a key takeaway I learned here is that breaking down a problem into smaller problems allows for greater parelellization and will allow you to compute heavy calculations much quicker. The downside is the system is much more complex and breaks the rule of simplicity. But here it was required.
 
 ## Read three of the post-mortems in this [repo](https://github.com/danluu/post-mortems). What are some of the ways in which outages are caused? What could the teams have done to mitigate the blast radius or lowered the chance of such an outage happening? Explain the outage in your own words and give an explanation for what you learned from each summary.
 
--- YOUR ANSWER HERE --
+### Conflict google cloud [issue](https://status.cloud.google.com/incident/compute/17003#5660850647990272)
+#### Summary
+- Due to a slow update process and reliance on a single layer of the same slowly updated load balancer, These load balancers were rarely updated, so when a mass amount of updates were made to the load balancer. Since it was updated sparing the application of updating the balancer exposed an inefficent code path, which resulted in the canary to timeout. This caused the order of things to be tested to get out of queue and to be halted on the testing phase. Its important to not be too reliant on a single thing and to frequently push updates.Testing Should have been batched for a system of that scale. That was where the problem began.
+
+### Analysis Github DDOS Report [issue](https://github.blog/2018-03-01-ddos-incident-report/)
+
+#### Summary
+- Github was unavailable due to a ddos service attack. This was due to its dependency on Cloudflare as a service. Hackers broke down cloudflare by overexerting the caching system of cloudflare. The problem here is they only had one layer of ddos protection. When it fell so did their entire system. Each layer of protection should have a backup if it is such an essential security layer as ddos protection layer.
 
 ## Reflect on your personal experience. What are some of the ways that your team keeps services healthy and responsive? How do you test services? How do you react quickly to an unhealthy service?
 
--- YOUR ANSWER HERE --
+- There are a variety of ways to test an application/service. We use tools like sentry to report bugs, Pytest for unit-testing, do our own QA testing at the end of each epic, as well as a diverse custom exception library to make our errors very specific. That can be one problem that arises. Many people will log exceptions in sentry but aren't writing specific enough exceptions, resulting in a painful debugging process. We also have a CI/CD pipeline that tests each docker-build. With all of these tools when we get a critial error or warning the engineers will be warned via email so that we can address the bug. We also track known issues and their progress in jira. I think the most important thing when dealing with bugs is that they are addressed quickly, and tracked. Each bug is a chance to improve your design skills. Is your system overloaded with information? You get a chance to learn about scaliblity. Log response times and set up notifications if a bottleneck is detected. If a machines resources are getting used too quickly we need to address what is causing the strain. Is this the best implementation of our system? IDK MAN.  
