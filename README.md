@@ -9,6 +9,7 @@
 - [Takashiidobe](./ch1/takashiidobe-answers.md)
 - [humbug](./ch1/humbug-answers.md)
 - [Andy](./ch1/andy-answers.md)
+- [Bryce](./ch1/bryce-answers.md)
 - [char](./ch1/char-answers.md)
 
 ## Chapter 2
