@@ -46,14 +46,18 @@ This made it easier to run, by just applying yaml to a k8s cluster, more reliabl
 
 Outages are often times caused by human error.  They could be better prevented with more automated guardrails around ensuring that config changes are not only valid, but also safe to do/tested with canaries.
 Additionally, services should be resilient to stampedes or failures in other services they interact with, to prevent cascading failures.
+
 https://blog.cloudflare.com/todays-outage-post-mortem-82515/
+
 Cloudflare pushed a bad config to all routers causing them to all fail.
 Should test on only a subset of traffic at a time, to make sure things are good w/ canaries to rollback if needed or if anything only cause degredation not outage.
 
 https://status.cloud.google.com/incident/compute/16007
+
 A bad GCP config change was propagated.  Similarly, testing with only a subset would have helped ensure the config was good to go.
 
 https://azure.microsoft.com/en-us/blog/update-on-azure-storage-service-interruption/
+
 A config change to a subset of customers exposed a bug that was not caught during the testing.
 Even if we deploy only to a subset of customers, we need good enough observability within those to determine if it is safe to propagate the deployment.
 
