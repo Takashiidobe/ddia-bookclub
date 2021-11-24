@@ -6,7 +6,7 @@
 
 ### Answers
 
-- [Takashiidobe](./ch1/takashiidobe-answers.md)
+- [Takashi](./ch1/takash-answers.md)
 - [humbug](./ch1/humbug-answers.md)
 - [Andy](./ch1/andy-answers.md)
 - [Bryce](./ch1/bryce-answers.md)
@@ -18,6 +18,8 @@
 - [Questions](./ch2/questions.md)
 
 ### Answers
+
+- [Takashi](./ch2/takashi-answers.md)
 
 ## Chapter 3
 
