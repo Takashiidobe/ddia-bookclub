@@ -11,6 +11,7 @@
 - [Andy](./ch1/andy-answers.md)
 - [Bryce](./ch1/bryce-answers.md)
 - [char](./ch1/char-answers.md)
+- [hexagon](./ch1/hexagon-answers.md)
 
 ## Chapter 2
 
