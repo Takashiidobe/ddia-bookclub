@@ -54,6 +54,12 @@
 
 ### Answers
 
+## Chapter 9
+
+- [Questions](./ch9/questions.md)
+
+### Answers
+
 ## Contributing
 
 If you'd like to join in on this book club session, you can fork this
