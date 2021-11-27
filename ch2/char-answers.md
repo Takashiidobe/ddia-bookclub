@@ -10,7 +10,7 @@ NoSQL Databases were created to address some concerns with scalability for high 
 
 ## There are three types of NoSQL databases (KV, Document, Graph). Explain each in your own words and some of the strengths and weaknesses of each.
 
-KV is for Key Value pairs, similar to a dictionary like redis and memcached.
+>KV is for Key Value pairs, similar to a dictionary like redis and memcached.
 
 **Pros**
 - Fast
@@ -19,7 +19,7 @@ KV is for Key Value pairs, similar to a dictionary like redis and memcached.
 **Cons**
 - Not good for complex data
 
-Document is like MongoDB to share documents, which are like KV but the V is structured data.
+>Document is like MongoDB to share documents, which are like KV but the V is structured data.
 
 **Pros**
 
@@ -31,7 +31,7 @@ Document is like MongoDB to share documents, which are like KV but the V is stru
 - Difficult to represent Many to Many relationships, as everything is nested in the document.
 - Can represent joins with multiple queries which can be expensive.
 
-Graph is like neo4j for graph relations.  Graph relationships make it easy to represent data that has many to many graph relationships.
+>Graph is like neo4j for graph relations.  Graph relationships make it easy to represent data that has many to many graph relationships.
 
 **Pros**
 
