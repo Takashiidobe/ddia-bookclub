@@ -40,15 +40,18 @@ NoSQL Databases were created to address some concerns with scalability for high 
 **Cons**
 
 - Not good for Transactional workloads.
+- Issues scaling write throughput
 
 
 ## What was your favorite query language this chapter? Why? Explore a query language you haven't tried before and try to explain its pros and cons.
 
-Cypher.  Reading the examples of SQL vs Cypher was very interesting, as I have definitely been very annoyed in the past when having to attempt to write complex SQL queries joining many tables.  Cypher greatly simplifies this usecase.
+Cypher.  Reading the examples of SQL vs Cypher was very interesting, as I have definitely been very annoyed in the past when having to attempt to write complex SQL queries joining many tables.  Cypher greatly simplifies this usecase with an easy to use declarative query language.  The only CON I can see is that it is only used for Neo4j
 
 ## Assume your next project is to create a Social Network. How would you store the data, and why?
 
-GraphDB.  I would store using graphs as relationships within a Social Network can be represented as graphs.  Queries on relationships between people, would be very simplified using cypher rather than sql.
+A GraphDB like Neo4j.  I would store using graphs as relationships within a Social Network can be represented as graphs. 
+
+Queries on relationships between people, would be very simplified using cypher rather than sql.
 
 ## Mapreduce is the first example of a distributed batch processing paradigm. Give a short summary of it. How would you improve it? What does it do well? What are some things you dislike about it?
 
@@ -59,8 +62,11 @@ I dislike that it is through batches, this makes it weak for usecases where you 
 ## It is said that NoSQL databases do not require a schema up front. Is this true? Conversely, is it possible to change the schemas of SQL databases after creation? If so, what are the caveats?
 
 Yes, it is true. NoSQL Databases generally do not require you to define all of the columns and their associated datatypes upfront.
+
 Yes, it is possible to change the schema of a SQL database after creation via schema migration, but it is an annoying process.
+
 Some issues you may run into include
+
 * Corrupt data that was written by old versions of the software and not cleaned properly
 * Implied dependencies in the data which no one knows about anymore
 * Mistakes in assumptions how data should be migrated
