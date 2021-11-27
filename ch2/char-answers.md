@@ -11,9 +11,11 @@ NoSQL Databases were created to address some concerns with scalability for high 
 ## There are three types of NoSQL databases (KV, Document, Graph). Explain each in your own words and some of the strengths and weaknesses of each.
 
 ###KV is for Key Value pairs, similar to a dictionary like redis and memcached.
+
 ####Pros
 Fast
 Simple
+
 ####Cons
 Not good for complex data
 
