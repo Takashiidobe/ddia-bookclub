@@ -45,7 +45,7 @@ NoSQL Databases were created to address some concerns with scalability for high 
 
 ## What was your favorite query language this chapter? Why? Explore a query language you haven't tried before and try to explain its pros and cons.
 
-Cypher.  Reading the examples of SQL vs Cypher was very interesting, as I have definitely been very annoyed in the past when having to attempt to write complex SQL queries joining many tables.  Cypher greatly simplifies this usecase with an easy to use declarative query language.  The only CON I can see is that it is only used for Neo4j
+Cypher.  Reading the examples of SQL vs Cypher was very interesting, as I have definitely been very annoyed in the past when having to attempt to write complex SQL queries joining many tables.  Cypher greatly simplifies this usecase with an easy to use declarative query language.  The only CON I can see is that it is only used for Neo4j and maybe a few other niche databases.
 
 ## Assume your next project is to create a Social Network. How would you store the data, and why?
 
