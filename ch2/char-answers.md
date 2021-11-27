@@ -13,33 +13,33 @@ NoSQL Databases were created to address some concerns with scalability for high 
 KV is for Key Value pairs, similar to a dictionary like redis and memcached.
 
 **Pros**
-Fast
-Simple
+- Fast
+- Simple
 
 **Cons**
-Not good for complex data
+- Not good for complex data
 
 Document is like MongoDB to share documents, which are like KV but the V is structured data.
 
 **Pros**
 
-Flexible Schema
-Better Locality ( don't need to do joins for data in the document )
+- Flexible Schema
+- Better Locality ( don't need to do joins for data in the document )
 
 **Cons**
 
-Difficult to represent Many to Many relationships, as everything is nested in the document.
-Can represent joins with multiple queries which can be expensive.
+- Difficult to represent Many to Many relationships, as everything is nested in the document.
+- Can represent joins with multiple queries which can be expensive.
 
 Graph is like neo4j for graph relations.  Graph relationships make it easy to represent data that has many to many graph relationships.
 
 **Pros**
 
-Easy to represent Many to Many relationships in queries with Cypher as opposed to long SQL with many joins.
+- Easy to represent Many to Many relationships in queries with Cypher as opposed to long SQL with many joins.
 
 **Cons**
 
-Not good for Transactional workloads.
+- Not good for Transactional workloads.
 
 
 ## What was your favorite query language this chapter? Why? Explore a query language you haven't tried before and try to explain its pros and cons.
