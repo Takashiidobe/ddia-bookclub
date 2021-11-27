@@ -19,6 +19,7 @@
 - [Questions](./ch2/questions.md)
 
 ### Answers
+- [char](./ch2/char-answers.md)
 
 ## Chapter 3
 
