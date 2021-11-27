@@ -37,12 +37,19 @@ A system is maintainable if it has operability(a system should be easy for an op
 
 ## Explain a project where you had to make it more reliable/scalable/maintainable. How did you do it, and what were some of the roadblocks in achieving the systems goals?
 
-On one of my personal projects I was building an image recognition application that needed to be callable by an existing application. Users would interact with this new system through a Discord bot meaning that the program had to be both reliable and scalable so that the system was always online and users could have fast responses when using the new feature. I was able to accomplish these requirements by rewriting some of the applications architecture so the new computationally expensive feature on the bot did not block other less intensive features on the bot, while also reducing the runtime of the image recognition so that the image recognition responses were taking < 10s. Some of the roadblocks in achieving these systems goals were learning how the original system worked even though it was undocumented, and also doing some profiling on the image recognition so I could find the what was causing the longer runtime. 
+On one of my personal projects I was building an image recognition service that needed to be callable by an existing application. Users would interact with this new system through a Discord bot meaning that the program had to be both reliable and scalable so that the system was always online and users could have fast responses when using the new feature. I was able to accomplish these requirements by rewriting some of the applications architecture so the new computationally expensive feature on the bot did not block other less intensive features on the bot(,i.e. async). Additionally I also worked on by reducing the runtime of the image recognition so that the responses were under < 10s allowing computing resources to be used on other tasks. Some of the roadblocks in achieving these systems goals were learning how the original system worked even though it was undocumented, and also doing some profiling on the image recognition so I could find what was causing the longer runtime. 
 
 ## Read three of the post-mortems in this [repo](https://github.com/danluu/post-mortems). What are some of the ways in which outages are caused? What could the teams have done to mitigate the blast radius or lowered the chance of such an outage happening? Explain the outage in your own words and give an explanation for what you learned from each summary.
 
-An error in a cloudflare config change caused their backbone network to go down
-A power disruption to a github server farm caused an interruption in service that was then prolonged by errors while the systems came back online
+1. https://blog.cloudflare.com/cloudflare-outage-on-july-17-2020/
+An error in cloudflare's backbone network config caused almost 50% of their network to go down. This error specifically happened when a new config was pushed to the backbone that redirected a large portion of the backbone traffic to one location. This large amount of traffic quickly overwhelmed that data center causing outages throughout their network. One way to mitigate these errors would have been to change the preference for local servers on the BGP network so a single data center cannot attract all of the traffic on the network. 
+
+2. https://github.blog/2016-02-03-january-28th-incident-report/
+A power disruption to a github server farm caused an interruption in service that was then prolonged by errors while the systems came back online after rebooting
+
+3. https://lkml.org/lkml/2012/7/1/203
+
+
 
 ## Reflect on your personal experience. What are some of the ways that your team keeps services healthy and responsive? How do you test services? How do you react quickly to an unhealthy service?
 
