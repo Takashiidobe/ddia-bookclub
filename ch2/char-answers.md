@@ -61,7 +61,7 @@ I dislike that it is through batches, this makes it weak for usecases where you 
 Yes, it is true. NoSQL Databases generally do not require you to define all of the columns and their associated datatypes upfront.
 Yes, it is possible to change the schema of a SQL database after creation via schema migration, but it is an annoying process.
 Some issues you may run into include
-    * Corrupt data that was written by old versions of the software and not cleaned properly
-    * Implied dependencies in the data which no one knows about anymore
-    * Mistakes in assumptions how data should be migrated
-    * Operational overhead of setting your application up to work with the old and new schemas, to do the migration without downtime.
+* Corrupt data that was written by old versions of the software and not cleaned properly
+* Implied dependencies in the data which no one knows about anymore
+* Mistakes in assumptions how data should be migrated
+* Operational overhead of setting your application up to work with the old and new schemas, to do the migration without downtime.
