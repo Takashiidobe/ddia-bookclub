@@ -19,6 +19,8 @@
 
 ### Answers
 
+- [hexagon](./ch2/hexagon-answers.md)
+
 ## Chapter 3
 
 - [Questions](./ch3/questions.md)
