@@ -19,8 +19,8 @@
 - [Questions](./ch2/questions.md)
 
 ### Answers
-- [char](./ch2/char-answers.md)
 
+- [char](./ch2/char-answers.md)
 - [Takashi](./ch2/takashi-answers.md)
 
 ## Chapter 3
