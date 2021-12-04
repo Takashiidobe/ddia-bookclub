@@ -2,52 +2,52 @@
 
 ## Explain NoSQL and Relational Databases in your own words. What are their strengths? What are their weaknesses?
 
-####Relational
+#### Relational
 Relational databases are a data model implementation in which data relationships are organized into collections, typically known as tables and rows in SQL. This model was derived from needs in the business world, requiring relatively consistent structure across different use cases, and its underlying goal was to abstract away the underlying implementation of the database for developers. 
 
-#####Strengths
+##### Strengths
 -Access to data is straightforward due to its format
 -Query optimization (ideal query execution) rarely required by developer
 -New querying methods and features easy to implement
 -Query optimizers, written once, can improve the experience of accessing the DB for all applications that come after
 
-#####Weaknesses
+##### Weaknesses
 -Query optimizers for RDBs require significant time and resources to develop
 -Model rarely reflects format of the data on application side
 
-####NoSQL
+#### NoSQL
 NoSQL is one of the few competing models to relational that has seen successful adoption. Rather than organize data into tables and rows, NoSQL's document model simply organizes data in an unstructured manner, allowing for multiple data representations within the same database.
 
-#####Strengths
+##### Strengths
 -Easier scalability features
 -Better alignment and reception by FOSS
 -Unique querying operations not always found in RDBs
 -Relatively greater flexibility and extensibility
 
-#####Weaknesses
+##### Weaknesses
 -Difficult to handle many-to-many relationships (i.e. joins), pushing such logic into application code
 -Cannot refer to nested items within documents
 -The larger the document in the database, the more expensive it is to load smaller portions of it
 
 ## There are three types of NoSQL databases (KV, Document, Graph). Explain each in your own words and some of the strengths and weaknesses of each.
 
-####Key-Value
+#### Key-Value
 
-#####Strengths
+##### Strengths
 -
-#####Weaknesses
+##### Weaknesses
 -
-####Document
+#### Document
 
-#####Strengths
+##### Strengths
 -
-#####Weaknesses
+##### Weaknesses
 -
-####Graph
+#### Graph
 
-#####Strengths
+##### Strengths
 -
-#####Weaknesses
+##### Weaknesses
 -
 
 ## What was your favorite query language this chapter? Why? Explore a query language you haven't tried before and try to explain its pros and cons.
