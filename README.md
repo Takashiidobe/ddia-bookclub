@@ -23,6 +23,7 @@
 - [char](./ch2/char-answers.md)
 - [Takashi](./ch2/takashi-answers.md)
 - [hexagon](./ch2/hexagon-answers.md)
+- [humbug](./ch2/humbug-answers.md)
 
 ## Chapter 3
 
