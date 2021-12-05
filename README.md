@@ -6,9 +6,13 @@
 
 ### Answers
 
-- [Takashiidobe](./ch1/takashiidobe-answers.md)
+- [Takashi](./ch1/takash-answers.md)
 - [humbug](./ch1/humbug-answers.md)
 - [Andy](./ch1/andy-answers.md)
+- [Bryce](./ch1/bryce-answers.md)
+- [char](./ch1/char-answers.md)
+- [hexagon](./ch1/hexagon-answers.md)
+- [ff](./ch1/ff-answers.md)
 
 ## Chapter 2
 
@@ -16,9 +20,50 @@
 
 ### Answers
 
+- [char](./ch2/char-answers.md)
+- [Takashi](./ch2/takashi-answers.md)
+- [hexagon](./ch2/hexagon-answers.md)
+- [humbug](./ch2/humbug-answers.md)
+
 ## Chapter 3
 
 - [Questions](./ch3/questions.md)
+
+### Answers
+
+## Chapter 4
+
+- [Questions](./ch4/questions.md)
+
+### Answers
+
+## Chapter 5
+
+- [Questions](./ch5/questions.md)
+
+### Answers
+
+## Chapter 6
+
+- [Questions](./ch6/questions.md)
+
+### Answers
+
+## Chapter 7
+
+- [Questions](./ch7/questions.md)
+
+### Answers
+
+## Chapter 8
+
+- [Questions](./ch8/questions.md)
+
+### Answers
+
+## Chapter 9
+
+- [Questions](./ch9/questions.md)
 
 ### Answers
 
