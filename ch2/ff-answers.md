@@ -32,11 +32,16 @@ NoSQL is one of the few competing models to relational that has seen successful 
 ## There are three types of NoSQL databases (KV, Document, Graph). Explain each in your own words and some of the strengths and weaknesses of each.
 
 #### Key-Value
+Key-Value is a pattern for storing data in collections, in which a piece of data is associated to a key unique to that collection. This manifests as data structures commonly known as hash tables, maps, or dictionaries.
 
 ##### Strengths
--
+-More flexible than RDBs
+-Structure more closely reflects application side use case
+-Lower memory usage due to lack of pre-determined inputs and parameters
+
 ##### Weaknesses
 -
+
 #### Document
 
 ##### Strengths
