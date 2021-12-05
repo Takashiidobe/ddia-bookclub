@@ -16,7 +16,7 @@ For human errors, a system becomes unreliable when we're not considering how dum
 
 ## What makes a system scalable? What are the characteristics of a scalable system?
 
-Scalability is how much a system can COPE with increased load. A scalable system must handle multiple dimensions from increased reads and writes to improved service .
+Scalability is how much a system can COPE with increased load. A scalable system must handle multiple dimensions from increased reads and writes to improving service quality (meeting stricter SLAs), expanding service to multiple regions, and adding redundancy. A scalable system must allow for the improvement of existing components and the addition of new components to meet new performance goals.
 
 ## What is the difference between a horizontally scaling and vertically scaling system? What are some of the pros and cons for each?
 
@@ -27,18 +27,23 @@ Scaling up or adding resources to one machine/server.
 Less complex
 
 #### Cons
-More expensive once you 
+Exponentially more expensive to keep improving one machine
+Upgrades to a single machine are limited
 
 ### Horizontal Scaling
 Scaling out or adding more machines/servers.
+
 #### Pros
+More cost effective
 
 #### Cons
 More complications and failure modes
 
 ## What makes a system maintainable? What makes a system "unmaintainable"?
 
--- YOUR ANSWER HERE --
+A maintainable system is one that can be kept operating in its current capacity as well as extended to support other use cases. Over time, the people operating, maintaining, and building upon the system will change so this work must be manageable for new staff. So a system becomes unmaintainable or degraded when one of these properties is lost. This can occur gradually from a build up bugs and technical debt (lack of automation, lack of test coverage, lack of documentation, etc.). Lack of automation wastes manhours maintaining and supporting manual processes. Lack of test coverage contributes to a build up of bugs, undetected regressions. Lack of documentation, especially for troubleshooting, wastes manhours on resolving the same issues and reinventing the wheel.
+
+A system is not only the software that comprises the service/platform and the hardware the software runs on, but also the people and the organizations that support it. Knowledge sharing is a critical component of maintainability. Concentrating information in a handful of specialists means that expertise will be lost when they are no longer around to support the system. Usually maintainability is lost when an organization doesn't prioritize it. This has downstream effects that reduce reliability and scalability as maintainenance issues start consuming more and more capacity.
 
 ## Explain a project where you had to make it more reliable/scalable/maintainable. How did you do it, and what were some of the roadblocks in achieving the systems goals?
 
@@ -63,8 +68,10 @@ Datetime libraries and code are prone to errors and edgecases. When operating at
 Time to detection was 75 minutes after the first timeout, which would be greatly improved by classifying the timeouts as failures earlier. Transparency for the customer is important. They need to know that we are aware of the issue and are working to resolve it. Not only do customers need to be informed about service health, but they also need that information presented in a compact, user friendly manner.
 
 (Outage 3)[https://blog.cloudflare.com/a-byzantine-failure-in-the-real-world/]
+Cloudflare had an outage due to faulty network switch which recovered, but triggered a Byzantine fault (technically an omission fault in this case) in which their main strongly consistent key-value store entered a readonly state. The readonly state was triggered due to a Byzantine fault in the nodes following the RAFT protocol where one node couldn't communicate with the leader and kept initiating leader elections while the other nodes kept electing a leader that the first node couldn't communicate with. Two clusters were unable to write to the key-value store, which prevented them from reporting that they had healthy primary databases, which triggered automatic promotion of replicas, which also triggered rebuilds on all replicas due to a bug. Due to the built in redundancy, no system completely failed but rather experienced degraded performance.
 
+Main takeaways are that the bug should be resolved and that there should be more redundancy in the system. There should be more levers for mitigation and, perhaps, drilling around failure scenarios. Six hours appears to be a rather long time for service disruption even if it is just degraded performance.
 
 ## Reflect on your personal experience. What are some of the ways that your team keeps services healthy and responsive? How do you test services? How do you react quickly to an unhealthy service?
 
--- YOUR ANSWER HERE --
+We keep an on-call rotation to support our services, hold regularly meetings to triage bugs and learn from major incidents. We use a combination of automated and manual tests for our services. We keep a subset of the production environment consisting of whitelisted test machines and follow a nightly deployment process into the test in production machines. A weekly manual test pass by third party contractors in BVT machines gates the deployment train into the rest of the production environments. On-call engineers are expected to respond to low-priority incidents during working hours and customer impacting issues within a specific time to respond window defined by our SLA.
