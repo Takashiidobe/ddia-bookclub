@@ -12,6 +12,7 @@
 - [Bryce](./ch1/bryce-answers.md)
 - [char](./ch1/char-answers.md)
 - [hexagon](./ch1/hexagon-answers.md)
+- [twitch](./ch1/twitch-answers.md)
 - [ff](./ch1/ff-answers.md)
 - [tosh](./ch1/tosh-answers.md)
 
