@@ -74,11 +74,11 @@ But seriously, I appreciated Cypher namely because it helps illustrate the logic
 
 DMX (or Data Mining Extensions) is a query language similar to SQL supported by large orgs like Microsoft and Oracle, operating on data mining models instead of relational tables.
 
-####Pros
+#### Pros
 -Ideal for writing predictive queries
 -Linguistic similarities to SQL make it easier to adopt and adapt
 
-####Cons
+#### Cons
 -Limited use cases due to the language's focus
 -Much of language's querying functionality can be executed more efficiently through MSFT's GUI
 
