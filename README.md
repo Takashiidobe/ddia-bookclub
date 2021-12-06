@@ -6,7 +6,7 @@
 
 ### Answers
 
-- [Takashi](./ch1/takash-answers.md)
+- [Takashi](./ch1/takashi-answers.md)
 - [humbug](./ch1/humbug-answers.md)
 - [Andy](./ch1/andy-answers.md)
 - [Bryce](./ch1/bryce-answers.md)
@@ -18,7 +18,6 @@
 ## Chapter 2
 
 - [Questions](./ch2/questions.md)
-- [ff](./ch2/ff-answers.md)
 
 ### Answers
 
@@ -27,6 +26,7 @@
 - [hexagon](./ch2/hexagon-answers.md)
 - [humbug](./ch2/humbug-answers.md)
 - [tosh](./ch2/tosh-answers.md)
+- [ff](./ch2/ff-answers.md)
 
 ## Chapter 3
 
