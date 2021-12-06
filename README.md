@@ -35,6 +35,8 @@
 
 ### Answers
 
+- [Takashi](./ch3/takashi-answers.md)
+
 ## Chapter 4
 
 - [Questions](./ch4/questions.md)
@@ -84,4 +86,3 @@ repo, where a maintainer will merge it in.
 
 Every week, new questions will be added for the chapter we're reading,
 so be on the lookout for that.
-
