@@ -13,6 +13,7 @@
 - [char](./ch1/char-answers.md)
 - [hexagon](./ch1/hexagon-answers.md)
 - [ff](./ch1/ff-answers.md)
+- [tosh](./ch1/tosh-answers.md)
 
 ## Chapter 2
 
@@ -23,6 +24,7 @@
 - [char](./ch2/char-answers.md)
 - [Takashi](./ch2/takashi-answers.md)
 - [hexagon](./ch2/hexagon-answers.md)
+- [tosh](./ch2/tosh-answers.md)
 
 ## Chapter 3
 
