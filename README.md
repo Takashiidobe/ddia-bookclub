@@ -10,6 +10,7 @@
 - [humbug](./ch1/humbug-answers.md)
 - [Andy](./ch1/andy-answers.md)
 - [Bryce](./ch1/bryce-answers.md)
+- [char](./ch1/char-answers.md)
 
 ## Chapter 2
 
@@ -32,6 +33,12 @@
 ## Chapter 5
 
 - [Questions](./ch5/questions.md)
+
+### Answers
+
+## Chapter 6
+
+- [Questions](./ch6/questions.md)
 
 ### Answers
 
