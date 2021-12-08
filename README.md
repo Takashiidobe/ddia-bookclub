@@ -28,6 +28,7 @@
 - [humbug](./ch2/humbug-answers.md)
 - [tosh](./ch2/tosh-answers.md)
 - [ff](./ch2/ff-answers.md)
+- [bryce](./ch2/bryce-answers.md)
 
 ## Chapter 3
 
