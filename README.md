@@ -38,6 +38,7 @@
 
 - [Takashi](./ch3/takashi-answers.md)
 - [hexagon](./ch3/hexagon-answers.md)
+- [Bryce](./ch3/bryce-answers.md)
 
 ## Chapter 4
 
