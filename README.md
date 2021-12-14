@@ -37,6 +37,7 @@
 ### Answers
 
 - [Takashi](./ch3/takashi-answers.md)
+- [Bryce](./ch3/bryce-answers.md)
 
 ## Chapter 4
 
