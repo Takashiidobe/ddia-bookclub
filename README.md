@@ -46,6 +46,8 @@
 
 ### Answers
 
+- [Takashi](./ch4/takashi-answers.md)
+
 ## Chapter 5
 
 - [Questions](./ch5/questions.md)
