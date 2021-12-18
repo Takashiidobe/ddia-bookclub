@@ -47,6 +47,7 @@
 ### Answers
 
 - [Takashi](./ch4/takashi-answers.md)
+- [hexagon](./ch4/hexagon-answers.md)
 
 ## Chapter 5
 
