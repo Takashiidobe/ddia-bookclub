@@ -15,6 +15,7 @@
 - [twitch](./ch1/twitch-answers.md)
 - [ff](./ch1/ff-answers.md)
 - [tosh](./ch1/tosh-answers.md)
+- [AlimouT](./ch1/alimout-answers.md)
 
 ## Chapter 2
 
