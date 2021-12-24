@@ -141,4 +141,6 @@ for an RDBMS, but this comes at the cost of range query reads becoming
 slower (reads over a range may require querying multiple partitions,
 which doesn't scale anymore).
 
-
+Do we give up and try to only allow queries on a local secondary index
+with sort keys (like dynamo does)? Is there a way to scale reads if
+they're columnar like Cassandra does?
