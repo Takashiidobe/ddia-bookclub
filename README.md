@@ -16,6 +16,7 @@
 - [ff](./ch1/ff-answers.md)
 - [tosh](./ch1/tosh-answers.md)
 - [AlimouT](./ch1/alimout-answers.md)
+- [twitchanswers](./ch1/twitch-answers.md)
 
 ## Chapter 2
 
@@ -30,6 +31,7 @@
 - [tosh](./ch2/tosh-answers.md)
 - [ff](./ch2/ff-answers.md)
 - [bryce](./ch2/bryce-answers.md)
+- [twitchanswers](./ch2/twitch-answers.md)
 
 ## Chapter 3
 
