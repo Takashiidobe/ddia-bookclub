@@ -6,13 +6,16 @@
 
 ### Answers
 
-- [Takashi](./ch1/takash-answers.md)
+- [Takashi](./ch1/takashi-answers.md)
 - [humbug](./ch1/humbug-answers.md)
 - [Andy](./ch1/andy-answers.md)
 - [Bryce](./ch1/bryce-answers.md)
 - [char](./ch1/char-answers.md)
 - [hexagon](./ch1/hexagon-answers.md)
+- [twitch](./ch1/twitch-answers.md)
 - [ff](./ch1/ff-answers.md)
+- [tosh](./ch1/tosh-answers.md)
+- [AlimouT](./ch1/alimout-answers.md)
 
 ## Chapter 2
 
@@ -24,6 +27,9 @@
 - [Takashi](./ch2/takashi-answers.md)
 - [hexagon](./ch2/hexagon-answers.md)
 - [humbug](./ch2/humbug-answers.md)
+- [tosh](./ch2/tosh-answers.md)
+- [ff](./ch2/ff-answers.md)
+- [bryce](./ch2/bryce-answers.md)
 
 ## Chapter 3
 
@@ -31,11 +37,18 @@
 
 ### Answers
 
+- [Takashi](./ch3/takashi-answers.md)
+- [hexagon](./ch3/hexagon-answers.md)
+- [Bryce](./ch3/bryce-answers.md)
+
 ## Chapter 4
 
 - [Questions](./ch4/questions.md)
 
 ### Answers
+
+- [Takashi](./ch4/takashi-answers.md)
+- [hexagon](./ch4/hexagon-answers.md)
 
 ## Chapter 5
 
@@ -43,17 +56,23 @@
 
 ### Answers
 
+- [Takashi](./ch5/takashi-answers.md)
+
 ## Chapter 6
 
 - [Questions](./ch6/questions.md)
 
 ### Answers
 
+- [Takashi](./ch6/takashi-answers.md)
+
 ## Chapter 7
 
 - [Questions](./ch7/questions.md)
 
 ### Answers
+
+- [Takashi](./ch7/takashi-answers.md)
 
 ## Chapter 8
 
@@ -80,4 +99,3 @@ repo, where a maintainer will merge it in.
 
 Every week, new questions will be added for the chapter we're reading,
 so be on the lookout for that.
-

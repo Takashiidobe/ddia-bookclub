@@ -20,6 +20,10 @@
 
 -- YOUR ANSWER HERE --
 
+## B-trees are the most common index in databases. What makes them so popular? What are some of their tradeoffs when compared to hash indexes and SSTables? Likewise, what are some pain points of B-trees?
+
+-- YOUR ANSWER HERE --
+
 ## What are some of the pain points of working with indexes in your experience? Are they a silver bullet? Can you recall a time when using an index was unintuitive?
 
 -- YOUR ANSWER HERE --
