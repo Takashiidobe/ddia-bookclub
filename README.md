@@ -17,6 +17,7 @@
 - [tosh](./ch1/tosh-answers.md)
 - [AlimouT](./ch1/alimout-answers.md)
 - [twitchanswers](./ch1/twitch-answers.md)
+- [Jake](./ch1/jake-answers.md)
 
 ## Chapter 2
 
