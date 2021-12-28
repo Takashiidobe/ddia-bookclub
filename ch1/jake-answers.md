@@ -29,11 +29,20 @@ Things that make a system unmaintainable are, lots of complexitiy, terrible visi
 
 ## Explain a project where you had to make it more reliable/scalable/maintainable. How did you do it, and what were some of the roadblocks in achieving the systems goals?
 
-Aint never had to cuz. Becuz i am a scubby nerd that sucks.
+Aint never had to cuz. Becuz i am a nooby nerd that sucks.
 
 ## Read three of the post-mortems in this [repo](https://github.com/danluu/post-mortems). What are some of the ways in which outages are caused? What could the teams have done to mitigate the blast radius or lowered the chance of such an outage happening? Explain the outage in your own words and give an explanation for what you learned from each summary.
 
--- YOUR ANSWER HERE --
+https://aws.amazon.com/message/2329B7/
+The outage was occured because of a failure in a transformer. Which resulted in loss of electricty. Once the loss of electricy happened the generators kicked on and one of the PLCs to sync the the generators failed. The reason the PLC failed is because of a ground fault detected made it fail its task. The way to mitigate this is add redundacy to the PLCs and isolation of such equipment in a stable enviroment. have redudancy and check on shit.
+
+https://status.discordapp.com/incidents/dj3l6lw926kl
+
+An internal service at discord which tracks real time state and information of users disconnected from its cluster. Another node which handles a different service tried to reconnect causing a "thundering herd" towards a cluster. which caused 1/3rd of all connected sessions on Discord to effectively stall, queuing events in memory. then ran out of memory and crashed. the way to fix was fixing the split brain bug. also, limited the connections to sessions cluster to presence server. wish people deployed bug patches sooner that you told people about
+
+https://status.heroku.com/incidents/642?postmortem
+
+The issue started a rolling restart of our runtime agents. This caused a loss of communication between the runtime agents on the updated instances and the dyno manager. While dynos kept running, the dyno manager stopped receiving status updates and was unable to start new dynos, restart existing dynos or respond to dyno crashes and other types of failures. This caused some apps to experience routing issues when dynos crashed. Fix the operational documentation. also, maintenance scheduling. Write good docs 
 
 ## Reflect on your personal experience. What are some of the ways that your team keeps services healthy and responsive? How do you test services? How do you react quickly to an unhealthy service?
 
