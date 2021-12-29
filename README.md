@@ -101,6 +101,12 @@
 
 ### Answers
 
+## Chapter 12
+
+- [Questions](./ch12/questions.md)
+
+### Answers
+
 ## Contributing
 
 If you'd like to join in on this book club session, you can fork this
