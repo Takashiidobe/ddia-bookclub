@@ -83,6 +83,8 @@
 
 ### Answers
 
+- [Takashi](./ch8/takashi-answers.md)
+
 ## Chapter 9
 
 - [Questions](./ch9/questions.md)
